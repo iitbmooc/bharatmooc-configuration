@@ -1,0 +1,22 @@
+---
+#
+# edX Configuration
+#
+# github:     https://github.com/iitbmooc/bharatmooc-configuration
+# wiki:       https://github.com/iitbmooc/bharatmooc-configuration/wiki
+# code style: https://github.com/iitbmooc/bharatmooc-configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/iitbmooc/bharatmooc-configuration/blob/master/LICENSE.TXT
+#
+##
+# Role includes for role aws
+# 
+# Example:
+#
+# dependencies:
+#   - {
+#   role: my_role 
+#   my_role_var0: "foo"
+#   my_role_var1: "bar"
+# }
+dependencies:
+  - common

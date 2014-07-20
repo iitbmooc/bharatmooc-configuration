@@ -1,0 +1,18 @@
+---
+#
+# edX Configuration
+#
+# github:     https://github.com/iitbmooc/bharatmooc-configuration
+# wiki:       https://github.com/iitbmooc/bharatmooc-configuration/wiki
+# code style: https://github.com/iitbmooc/bharatmooc-configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/iitbmooc/bharatmooc-configuration/blob/master/LICENSE.TXT
+#
+#
+#
+# Handlers for role edx_service
+# 
+# Overview:
+# 
+#
+- name: edx_service | notify me
+  debug: msg="stub handler"

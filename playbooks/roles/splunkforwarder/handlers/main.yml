@@ -1,0 +1,20 @@
+---
+#
+# edX Configuration
+#
+# github:     https://github.com/iitbmooc/bharatmooc-configuration
+# wiki:       https://github.com/iitbmooc/bharatmooc-configuration/wiki
+# code style: https://github.com/iitbmooc/bharatmooc-configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/iitbmooc/bharatmooc-configuration/blob/master/LICENSE.TXT
+#
+#
+#
+# Handlers for role splunk
+#
+# Overview:
+#
+#
+
+# Restart Splunk
+- name: restart splunkforwarder
+  service: name=splunk state=restarted

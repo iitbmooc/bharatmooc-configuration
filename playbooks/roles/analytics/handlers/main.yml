@@ -1,0 +1,22 @@
+---
+#
+# edX Configuration
+#
+# github:     https://github.com/iitbmooc/bharatmooc-configuration
+# wiki:       https://github.com/iitbmooc/bharatmooc-configuration/wiki
+# code style: https://github.com/iitbmooc/bharatmooc-configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/iitbmooc/bharatmooc-configuration/blob/master/LICENSE.TXT
+#
+#
+#
+# Handlers for role analytics
+#
+# Overview:
+#
+#
+
+- name: stop the analytics service
+  service: name=analytics state=stopped
+
+- name: start the analytics service
+  service: name=analytics state=started

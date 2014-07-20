@@ -1,0 +1,20 @@
+#
+# edX Configuration
+#
+# github:     https://github.com/iitbmooc/bharatmooc-configuration
+# wiki:       https://github.com/iitbmooc/bharatmooc-configuration/wiki
+# code style: https://github.com/iitbmooc/bharatmooc-configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/iitbmooc/bharatmooc-configuration/blob/master/LICENSE.TXT
+#
+#
+#
+# Defaults for role devpi
+#
+---
+- name: restart devpi
+  supervisorctl_local: >
+    state=restarted
+    supervisorctl_path={{ devpi_supervisor_ctl }}
+    config={{ devpi_supervisor_cfg }}
+    name=devpi-server
+  sudo_user: "{{ devpi_supervisor_user }}"

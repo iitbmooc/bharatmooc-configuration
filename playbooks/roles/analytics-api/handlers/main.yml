@@ -1,0 +1,23 @@
+---
+#
+# edX Configuration
+#
+# github:     https://github.com/iitbmooc/bharatmooc-configuration
+# wiki:       https://github.com/iitbmooc/bharatmooc-configuration/wiki
+# code style: https://github.com/iitbmooc/bharatmooc-configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/iitbmooc/bharatmooc-configuration/blob/master/LICENSE.TXT
+#
+#
+#
+# Handlers for role analytics-api
+#
+# Overview:
+#
+#
+
+- name: "restart the analytics service"
+  supervisorctl_local: >
+    name={{ analytics_api_service_name }}
+    supervisorctl_path={{ supervisor_ctl }}
+    config={{ supervisor_cfg }}
+    state=restarted
